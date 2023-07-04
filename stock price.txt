@@ -1,0 +1,28 @@
+Yfinance is an open source library developed by Ran Aroussi for accessing Yahoo Finance’s financial data
+
+!pip install yfinance --quiet
+!pip install pmdarima --quiet
+
+With the second line “!pip install pmdarima — quiet”, the “pmdarima” library is installed. The AutoRegressive Integrated Moving Average (ARIMA) model is used in this library for time series analysis and forecasting
+
+!pip install statsmodels==0.11.0rc1 --quiet
+!pip install -Iv pulp==1.6.8 --quiet
+
+“!pip install statsmodels==0.11.0rc1 — quiet” installs the “statsmodels” library version 0.11.0rc1. Statistical modeling and econometrics can be performed using this library in Python.
+
+It installs version 1.6.8 of the “pulp” library with the second line “!pip install -Iv pulp==1.6.8 — quiet”. In Python, this library is used for linear programming optimization. If a newer version of the library is already installed, the “-Iv” option forces the installation of the specified version. Installing this specific version is ensured by the “==1.6.8” notation. During the installation process, “ — quiet” suppresses any output messages generated.
+
+Ex:
+	import yfinance as yf
+
+	# getting data from Yahoo Finance
+	stock_name = 'AMD'  # here you can change the name of stock ticker, for example we will 	take AMD ticker
+	data = yf.download(stock_name, start="2020-03-26", end="2021-03-29")
+
+# import plotly package for graphs
+import plotly
+import plotly.graph_objs as go
+import plotly.express as px
+from plotly.subplots import make_subplots
+
+
